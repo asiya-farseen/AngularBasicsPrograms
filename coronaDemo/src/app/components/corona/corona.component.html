@@ -1,0 +1,40 @@
+<div>
+    <h1>CORONA MASTER</h1>
+</div>
+<div>
+    <label>CODE</label><br>
+        <input type="number" name="code" [(ngModel)]="corona.code"><br>
+        <label>NAME</label><br>
+        <input type="text" name="name" [(ngModel)]="corona.name"><br>
+        <label>ACTIVE</label>
+        <input type="number" name="active" [(ngModel)]="corona.active"><br>
+        <label>RECOVERED</label>
+        <input type="number" name="recovered" [(ngModel)]="corona.recovered"><br>
+        <label>DEATH</label>
+        <input type="number" name="death" [(ngModel)]="corona.death"><br>
+        <label>TOTAL</label>
+        <input type="number" name="total" [(ngModel)]="corona.total"><br>
+   <button (click)="addCorona()">ADD</button>
+</div>
+<div>
+    <h1>CORONA LIST</h1>
+    <table>
+        <tr>
+            <th>CODE</th>
+            <th>NAME</th>
+            <th>ACIVE</th>
+            <th>RECOVERED</th>
+            <th>DEATH</th>
+            <th>TOTAL</th>
+        </tr>
+        <tr *ngFor="let corona of coronaList">
+        <td>{{corona.code}}</td>
+        <td>{{corona.name}}</td>
+        <td>{{corona.active}}</td>
+        <td>{{corona.recovered}}</td>
+        <td>{{corona.death}}</td>
+        <td>{{corona.total}}</td>
+        </tr>
+        
+    </table>
+</div>

@@ -1,0 +1,9 @@
+<div>
+    <h2>Child</h2>
+    <h6>Message from parent : {{msgToChild}}</h6>
+    
+    <h6>Message to parent</h6>
+    
+    <input type="text" class="d" name="msgtoparent" #msgParent>
+    <button (click)="postMsgToParent(msgParent.value)">Message to Parent</button>
+    </div>

@@ -1,0 +1,29 @@
+<h1>PIPES DEMO</h1>
+<h2>BUIL-IN PIPES</h2>
+<p>Upper Case :: {{course|uppercase}}</p>
+<p>Lower Case :: {{course|lowercase}}</p>
+<p>Title Case :: {{course|titlecase}}</p>
+<h2>CURRENCY</h2>
+<h3>default currency -{{a|currency}}</h3>
+<h2>a in INR {{a|currency:'INR'}}</h2>
+<h2> A: {{a | currency:'INR':'code'}}</h2>
+<h2> B :{{b|currency:'CAD':'symbol':'4.2-2'}}</h2>
+<h3>Date filter</h3>
+<h3>Today with out applying pipe{{today}}</h3>
+<h3>date pipe {{today|date:'short'}}</h3>
+<h3>date pipe-shortTime{{today|date:'shortTime'}}</h3>
+<h3>DECIMAL PIPE</h3>
+<p>no specified formating:
+    {{pi |number}}
+    </p>
+    <p>with digitsInfo paramenter specified:
+        {{pi|number:'4.1-5'}}
+    </p>
+<p>with digitsInfo and locale parameters specified
+    {{pi|number:'4.1-5':'en-IN'}}
+
+</p>
+
+<h2>Custome pipe </h2>
+<p>{{2|exponentialstrength}}</p>
+<p>{{2|exponentialstrength:3}}</p>
